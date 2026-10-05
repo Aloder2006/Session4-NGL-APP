@@ -8,3 +8,13 @@ Content-Type: application/json
     "email": "abdoatef947@gmail.com",
     "password": "ahmed123"
 }
+
+### auth/verify-account
+
+PATCH http://localhost:3000/auth/verify-account
+Content-Type: application/json
+
+{
+    "email": "abdoatef947@gmail.com",
+    "code": "920365"
+}
