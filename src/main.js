@@ -22,7 +22,7 @@ app.use((err, req, res, next) => {
     logger.error(err.message, err);
 
     if(err.isOperational === true){
-        res.status(err.statusCode).json({
+        return res.status(err.statusCode).json({
             error: err.message,
             success: false
         });
